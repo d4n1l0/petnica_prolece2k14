@@ -23,7 +23,7 @@ int main()
 
     ifstream f;
 
-    f.open("testset1/testset1");
+    f.open("testset3/testset3");
     
     f >> s;
 
@@ -57,14 +57,14 @@ int main()
 
         float eps;
  
-        eps = theta - nuv/2.00 + phi;
+        eps = theta - 3.00/4 * nuv + phi;
 
         //cout << rad2deg(theta) << " " << rad2deg(nuv/2.00) << " " << rad2deg(phi) << " " <<
         //    rad2deg(eps) << endl;
 
         //cout << rad2deg(eps) << " ";
 
-        cout << " " << H * tan(eps) + R*sin(theta) << " " << rad2deg(nuv/2.00) << endl;
+        cout << " " << H * tan(eps) + R*sin(theta) + 10 << " " << rad2deg(nuv/2.00) << endl;
 
 
     
